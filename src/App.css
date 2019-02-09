@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    background:#ffd7cb;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+body, input, textarea, select, button {
+    font-family: 'Raleway', sans-serif;
+}
+
+#root {
+    background: #ffd7cb;
+}
+
+/* --------------- COLORS ---------------*/
+.blue {color:#5D2BFF;}
+.blue-bg {background:#5D2BFF;}

@@ -1,11 +1,13 @@
 import React from "react";
 import './index.css';
 
+import Card from '../../Card';
+
 class Home extends React.Component {
     render() {
       return (
-        <div className="home">
-            <h1>Home content</h1>
+        <div className="row">
+            <Card/>
         </div>
       );
     }
