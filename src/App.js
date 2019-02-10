@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import {Container} from 'react-bootstrap';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTag } from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
 
-import Header from './components/Header';
 import Footer from './components/Footer';
-import Buttons from './components/Button';
 
 import Home from './components/Scenes/Home';
 import About from './components/Scenes/About';
@@ -29,9 +27,9 @@ class App extends Component {
     return (
       
       <BrowserRouter>
-        <div>
+        <div id="app">
           <Navigation />
-          <div className="container-fluid">
+          <Container fluid>
             <Switch>
               <Route path="/" component={Home} exact />
               <Route path="/activities" component={Activities}/>
@@ -40,7 +38,8 @@ class App extends Component {
               <Route path="/article" component={Article}/>
               <Route component={Error} />
             </Switch>
-          </div>
+            <Footer />
+          </Container>
         </div>
       </BrowserRouter>
 

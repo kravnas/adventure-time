@@ -6,7 +6,7 @@
 .card-date-event {
     position:absolute;
     top:10px;
-    right:10px;
+    right:25px;
     background:#5D2BFF;
     width: 70px;
     height: 70px;
@@ -33,8 +33,7 @@
     margin-top: 5px;
     text-align:right; 
 }
-.card-title {}
-.card-subtitle {}
+
 .card-tags {
     color: gray;
 }
@@ -45,4 +44,10 @@
 .card-tag {
     display: inline;
 }
-.card-description {}
+
+.card-footer {
+    padding:0px;
+    margin:0px;
+    background: transparent;
+    border: 0px;
+}
