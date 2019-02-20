@@ -7,14 +7,16 @@ import Button from "../Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Cards = (props) => {
+    
     return (
         <Col lg={3} md={4} sm={12}>
+        
+        
 
             <Card>
                 <Row>
                     <Col sm={12}>
                         <CardImg variant="top" className="card-image" src="http://placehold.it/250/d4d6e9" alt="" height="250" width="100%" />
-                        
                         <div className="card-date-event">
                             25.<br/> des
                         </div>

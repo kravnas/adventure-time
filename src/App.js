@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
+// CSS and GFX
 import 'bootstrap/dist/css/bootstrap.css';
 import {Container} from 'react-bootstrap';
-
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTag } from '@fortawesome/free-solid-svg-icons';
-
 import './App.css';
 
+// PAGE COMPONENTS
 import Footer from './components/Footer';
-
 import Home from './components/Scenes/Home';
 import About from './components/Scenes/About';
 import Activities from './components/Scenes/Activities';
@@ -21,6 +20,9 @@ import Error from './components/Scenes/Error';
 import Navigation from './components/Navigation';
 
 library.add(faTag)
+
+
+
 
 class App extends Component {
   render() {
